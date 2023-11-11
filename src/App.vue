@@ -1,6 +1,12 @@
 <script setup lang="ts">
-import NavBar from './components/NavBar.vue';
-import TitleSection from './components/manage-attendance/TitleSection.vue';
+import NavBar from './components/layout/navbar/index.vue'
+import FilterActions from './components/layout/sidebar/FilterActions.vue'
+import SearchFilterSection from './components/layout/sidebar/SearchFilterSection.vue'
+import TitleSection from './components/layout/sidebar/TitleSection.vue'
+import { ref } from 'vue'
+
+const activeTab = ref('logs')
+const updateActiveTab = (value: string) => (activeTab.value = value)
 </script>
 
 <template>
@@ -10,11 +16,11 @@ import TitleSection from './components/manage-attendance/TitleSection.vue';
   <div class="content">
     <aside>
       <!-- Attendance management section -->
-      <TitleSection />
+      <TitleSection :active-tab="activeTab" @set-active-tab="updateActiveTab" />
       <!-- Filters -->
-      <section></section>
+      <SearchFilterSection v-if="activeTab === 'logs'" />
       <!-- Actions -->
-      <section></section>
+      <FilterActions v-if="activeTab === 'logs'" is-export-disabled />
     </aside>
   </div>
 </template>
