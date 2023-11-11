@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { ref } from 'vue'
 import Navigation from './Navigation.vue'
-import TextBox from './TextBox.vue'
+import TextBox from '../../../components/common/TextBox.vue'
 import User from './User.vue'
 
 const dropdowns = ref([

@@ -1,0 +1,19 @@
+[
+  {
+    "company": "Sprout Solutions",
+    "departments": [
+      { "name": "Engineering", "location": [], "employees": [] },
+      { "name": "IT", "location": [], "employees": [] }
+    ]
+  },
+  {
+    "company": "McDollibee",
+    "departments": [
+      {
+        "name": "Products",
+        "location": ["Bahay"],
+        "employees": ["5 selected employees"]
+      }
+    ]
+  }
+]
