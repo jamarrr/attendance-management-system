@@ -1,4 +1,7 @@
 <script setup lang="ts">
+import LOGS_DATA from './utils/data/logs.json'
+
+import MainContent from './components/manage-attendance/MainContent.vue'
 import NavBar from './components/layout/navbar/index.vue'
 import FilterActions from './components/layout/sidebar/FilterActions.vue'
 import SearchFilterSection from './components/layout/sidebar/SearchFilterSection.vue'
@@ -6,7 +9,11 @@ import TitleSection from './components/layout/sidebar/TitleSection.vue'
 import { ref } from 'vue'
 
 const activeTab = ref('logs')
+const activeLogsButton = ref<'active' | 'deleted'>('active')
+
 const updateActiveTab = (value: string) => (activeTab.value = value)
+const updateActiveLogsButton = (value: 'active' | 'deleted') =>
+  (activeLogsButton.value = value)
 </script>
 
 <template>
@@ -22,11 +29,19 @@ const updateActiveTab = (value: string) => (activeTab.value = value)
       <!-- Actions -->
       <FilterActions v-if="activeTab === 'logs'" is-export-disabled />
     </aside>
+    <MainContent
+      @set-selected-log-button="updateActiveLogsButton"
+      :active-logs-button="activeLogsButton"
+      :active-tab="activeTab"
+      :logs-data="LOGS_DATA"
+    />
   </div>
 </template>
 
 <style scoped>
 .content {
+  box-sizing: border-box;
   display: flex;
+  align-items: flex-start;
 }
 </style>
