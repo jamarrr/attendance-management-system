@@ -155,10 +155,14 @@ main {
 }
 
 .table-header-btns button.active-logs {
+  color: #17ad49;
+  padding: 6px, 8px, 6px, 8px;
   border-radius: 0.25rem 0 0 0.25rem;
 }
 
 .table-header-btns button.deleted-logs {
+  color: #17ad49;
+  padding: 6px, 8px, 6px, 8px;
   border-radius: 0 0.25rem 0.25rem 0;
 }
 

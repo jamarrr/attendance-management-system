@@ -45,7 +45,6 @@ const setActiveTab = (tabName: string) => {
   font-family: 'Rubik', sans-serif;
   width: 354px;
   padding: 24px 32px;
-  border-right: 1px solid #c3cdc9;
   border-bottom: 1px solid #c3cdc9;
   color: #00291b;
 }

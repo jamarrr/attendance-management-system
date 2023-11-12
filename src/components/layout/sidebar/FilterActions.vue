@@ -32,7 +32,6 @@ section {
   gap: 8px;
   padding: 24px 32px;
   border-top: 1px solid #c3cdc9;
-  border-right: 1px solid #c3cdc9;
 }
 
 .search,

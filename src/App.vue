@@ -40,8 +40,11 @@ const updateActiveLogsButton = (value: 'active' | 'deleted') =>
 
 <style scoped>
 .content {
-  box-sizing: border-box;
   display: flex;
-  align-items: flex-start;
+}
+
+aside {
+  height: auto;
+  border-right: 1px solid #c3cdc9;
 }
 </style>

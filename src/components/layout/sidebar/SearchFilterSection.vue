@@ -166,7 +166,6 @@ onMounted(() => {
   font-family: 'Rubik', sans-serif;
   width: 354px;
   padding: 24px 32px;
-  border-right: 1px solid #c3cdc9;
   color: #00291b;
 }
 
