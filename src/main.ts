@@ -8,7 +8,12 @@ import {
   faMagnifyingGlass,
   faCaretDown,
   faCalendar,
-  faDownload
+  faDownload,
+  faCheck,
+  faAnglesLeft,
+  faAnglesRight,
+  faCaretLeft,
+  faCaretRight
   // faLocationDot,
   // faUser,
   // faUserGroup,
@@ -26,7 +31,12 @@ library.add(
   faMagnifyingGlass,
   faCaretDown,
   faCalendar,
-  faDownload
+  faDownload,
+  faCheck,
+  faAnglesLeft,
+  faAnglesRight,
+  faCaretLeft,
+  faCaretRight
   // faLocationDot,
   // faUser,
   // faUserGroup,

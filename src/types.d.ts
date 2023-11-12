@@ -15,3 +15,11 @@ interface FilterValuesObject {
   locationName: PropType<Ref<string>>
   employeeName: PropType<Ref<string>>
 }
+
+interface LogsData {
+  data: never[]
+  per_page: number
+  total_pages: number
+  current_page: number
+  totalRows: number
+}
